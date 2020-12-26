@@ -38,12 +38,14 @@
       font-family: Arial, sans-serif;
       text-decoration: none;
       cursor: default;
+      color: white;
     }
 
     body {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: black;
     }
   </style>
 
@@ -324,9 +326,7 @@
 <script>
   const d = new Date();
   if (d.getMonth() === 11 && d.getDate() === 25) {
-    document.body.style['background-color'] = 'black';
     const h1 = document.querySelector('h1')
-    h1.style.color = 'white';
     h1.innerText = 'NO';
     document.querySelector('.before').style.display = 'none';
     document.querySelector('.after').style.display = 'none';
